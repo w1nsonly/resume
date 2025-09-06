@@ -1,0 +1,232 @@
+%-------------------------
+% Resume in Latex
+% Author : Gabriel Sison
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Random Stuff %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage[default]{cantarell} %% Use option "defaultsans" to use cantarell as sans serif only
+\usepackage[T1]{fontenc}
+\usepackage{amssymb}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-12pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{0pt}]
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Commands  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-3pt}}
+  }
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubheadingContinue}[2]{
+  \vspace{-3pt}
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{0pt}}
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}
+{\end{itemize}\vspace{0pt}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Heading  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+% \sffamily
+    \begin{center}
+        % NAME
+        {\huge \scshape \textbf{\href{linkedin.com/in/winsondong}{Winson Dong }}}
+        
+        \small
+         % PHONE
+        \raisebox{-0.2\height}\faPhone\  \underline{859-585-9338} ~ 
+        % EMAIL
+        \href{mrwinsondong@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{mrwinsondong@gmail.com}} ~ 
+        % LINKEDIN
+        \href{linkedin.com/in/winsondong/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/winsondong}}  ~
+        % GITHUB
+        \href{https://www.github.com/w1nsonly}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/w1nsonly}}
+        % LOCATION
+        \raisebox{-0.2\height}\faMapPin \ \underline{Boston, MA}
+    \end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Education  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+  
+    % MAIN INFORMATION
+    \resumeSubheading
+    {Boston University}{Boston, MA}
+    {B.A.  in Computer Science (CS)}{Expected Fall 2025}
+        % BULLET POINTS
+        \resumeItemListStart
+            \resumeItem{\textbf{Selected Coursework:}  Python, Java, Combinatoric Structures, Geometric Algorithms, Computer Systems, Analysis of Algorithms, Probability in Computing, Artificial Intelligence, Full Stack Development}
+        \resumeItemListEnd
+        
+  \resumeSubHeadingListEnd
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Technical Skills  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{SKILLS}
+
+    \vspace{-7pt}
+    \begin{itemize}
+    [leftmargin=0.15in, label={}]\small{\item{
+        % LANGUAGES
+        \textbf{Languages}{: Python, Java, JavaScript/HTML/CSS, Typescript, SQL} \\
+        % FRAMEWORKS & LIBRARIES
+        \textbf{Framework and Libraries}{: React.js, Next.js, Node.js, Django, Flask, Express, Pandas, LangChain} \\
+        % DATABASES & VECTOR STORES
+        \textbf{Databases \& Vector Stores}{: PostgreSQL, SQLite, MySQL, MongoDB, Chroma} \\
+        % TOOLS
+        \textbf{Tools}{: OCR, RAG, Git, Docker, Google Cloud Platform, LaTeX/Overleaf, MS Excel/Word/PowerPoint} \\
+        }}
+        
+        
+    \end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Experience  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{WORK EXPERIENCE}
+    \resumeSubHeadingListStart
+
+        % COMPANY 1
+        \resumeSubheading
+        {City King Buffet }{Mount Sterling, KY}
+            % POSITION 1
+            {Freelance Web \& AI Integration Developer}{July 2025 -- Aug 2025}
+            \resumeItemListStart
+                \resumeItem{Built a responsive full-stack restaurant site with \textbf{Next.js (React)} for the UI and \textbf{Django REST} for the API, displaying dynamic menu data and business info.}
+
+                \resumeItem{Powered an AI-driven support chat using \textbf{OpenAI’s API}, \textbf{LangChain}, and a \textbf{Chroma} vector store to give customers instant, context-aware answers to menu, pricing, hours, and FAQ queries.}
+            \resumeItemListEnd
+
+        % COMPANY 2
+        \resumeSubheading
+        {All In}{Boston, MA}
+            % POSITION 1
+            {Software Engineer Intern}{Jan 2025 -- May 2025}
+            \resumeItemListStart
+                \resumeItem{Game hosting platform enabling hosts to handle game invites, track attendees, and manage waitlists.}
+
+                \resumeItem{Created advanced filtering and search features to allow users to discover and join public games based on game type and availability, enhancing user engagement and platform usability.}
+
+            \resumeItemListEnd
+            
+    \resumeSubHeadingListEnd
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  PROJECTS  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{PROJECTS} 
+    \resumeSubHeadingListStart
+        
+        % Project 1
+        \resumeProjectHeading
+        {\href{https://cs391-final-project-rho.vercel.app/}{Boston Shooting Data Dashboard \faExternalLink* \normalfont{| \textit{React + TypeScript}} }}
+        % Date
+        {Apr 2025}
+        \resumeItemListStart
+        
+          \resumeItem{Built a \textbf{React/TypeScript} dashboard to fetch \& filter ~2,000 Boston shooting incidents by year, neighborhood, type, gender, race, and multi-victim status.}
+
+          \resumeItem{Used \textbf{Leaflet+GeoJSON} for neighborhood selection; \textbf{Styled-Components} for Card/Table/Graph views; and \textbf{Chart.js} for yearly trend visualization.}
+
+        \resumeItemListEnd
+
+        % Project 2
+        \resumeProjectHeading
+        {\href{https://github.com/w1nsonly/AirbnbPricePredictor}{Airbnb Price Prediction \faExternalLink* \normalfont{| \textit{Python + Scikit-Learn + Pandas}} }}
+        % Date
+        {Apr 2025}
+        \resumeItemListStart
+            \resumeItem{Developed an end-to-end pipeline to predict NYC Airbnb prices with a Random Forest regressor $\mathbf{R^2 \approx 0.71}$.}
+            
+            \resumeItem{Cleaned \& merged \textbf{~28,000} listings, engineered features (amenities, location, host/review metrics), log-transformed price, and plotted top feature importances.}
+
+        \resumeItemListEnd
+
+        % Project 3
+        \resumeProjectHeading
+        {\href{}{Mini Facebook \faExternalLink* 
+        \normalfont{| \textit{Django + HTML Templates + ORM }} }}
+        % Date
+        {March 2025}
+        \resumeItemListStart
+            \resumeItem{Built a social media platform using \textbf{Django} with for user profiles, status messages, and image uploads.}
+            
+            \resumeItem{Leveraged \textbf{Django ORM} to model complex relationships (e.g. friends-of-friends, media-to-status linking) and optimize data retrieval for personalized news feeds}
+        \resumeItemListEnd
+        
+        
+    \resumeSubHeadingListEnd
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  LEADERSHIP  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{LEADERSHIP}
+    \resumeSubHeadingListStart
+    
+    % ORGANIZATION 1
+    \resumeSubheading
+    {Lambda Chi Alpha Fraternity}{Boston, MA}
+        % Position 1
+        {Recruitment Chair}
+        {Sep 2024 -- Dec 2024}
+        \resumeItemListStart
+            \resumeItem{Managed recruitment by introducing new events and outreach strategies, leading a team of 8 members, catalyzing a \textbf{40\%} increase in prospective member participation.}
+            
+            \resumeItem{Introduced a referral program, encouraging current members to recommend potential recruits, resulting in a \textbf{15\%} increase in quality candidate applications.}
+            
+        \resumeItemListEnd
+    
+        
+    \resumeSubHeadingListEnd
+ 
+\end{document}
